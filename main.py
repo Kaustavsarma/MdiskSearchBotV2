@@ -108,8 +108,8 @@ async def message_handler(event):
 **Click On The Help To Know How To Watch**
     '''
 
-            newbutton = [Button.url('Help🙋',
-                                    f'https://t.me/postsearchbot?start=Watch')]
+            newbutton = [Button.url('Help',
+                                    f'https://t.me/Mdisk_pro_gram_bot?start=Watch')]
 
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
@@ -129,10 +129,13 @@ async def message_handler(event):
             title=event.text,
             author=Config.BOT_USERNAME
         )
-        message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
+        message = f'**"{event.text}"**\n\n[🎬 {str(event.text).upper()}\n🎬 {str("Click me for results").upper()}]({tgraph_result})'
 
-        newbutton = [Button.url('How To Watch ❓',
-                                    f'https://t.me/postsearchbot?start=Watch')]
+        newbutton = [Button.url('How To Download',
+                                    f'https://t.me/dxcsgroup/675?start=Watch')]
+        
+        newbutton = [Button.url('JOIN BACKUP CHANNEL',
+                                    f'https://t.me/netflix_indiago2?start=watch')]
 
         await txt.delete()
         await asyncio.sleep(0.5)
